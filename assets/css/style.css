@@ -1003,7 +1003,7 @@ ul.sub-menu li:hover a span{
     align-items: baseline;
     gap: 14px;
     /* font-family: 'Playfair Display', serif; */
-    font-size: 40px;
+    font-size: 34px;
     color: #0d3d38;
     padding: 14px 0;
     transition: color 0.3s ease, padding-left 0.3s ease;
@@ -1075,7 +1075,7 @@ ul.sub-menu li:hover a span{
         padding: 40px 30px;
     }
     .menu-nav-list li a {
-        font-size: 30px;
+        font-size: 24px;
     }
     .menu-contact-row {
         flex-direction: column;

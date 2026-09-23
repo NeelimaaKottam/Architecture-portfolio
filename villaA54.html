@@ -55,10 +55,6 @@
 				</div>
 				<div class="col-lg-3">
 					<div class="header-src-box">
-
-						<div class="header-button two">
-							<a href="#">Talk to us<i class="bi bi-arrow-right-short"></i></a>
-						</div>
 						<div class="sidebar-btn style_two">
 							<div class="nav-btn navSidebar-button style_two"><span><i class="bi bi-filter-left"></i></span></div>							
 						</div>
@@ -78,9 +74,9 @@
 
 						<div class="menu-featured-project">
 							<span class="fp-label">FEATURED PROJECT</span>
-							<h4>Sakura -A Far Eastern Kitchen</h4>
-							<p>Restaurant<br>Hyderabad, Telangana<br>2024</p>
-							<a href="sakura.html" class="view-project-link">VIEW PROJECT <i class="fas fa-arrow-right"></i></a>
+							<h4>DOMINION </h4>
+							<p>Residential Apartment<br>Hyderabad, Telangana<br>2025</p>
+							<!-- <a href="sakura.html" class="view-project-link">VIEW PROJECT <i class="fas fa-arrow-right"></i></a> -->
 						</div>
 					</div>
 				</div>
@@ -101,10 +97,10 @@
 					</div>
 
 					<ul class="menu-nav-list">
-						<li><a href="#portfolio">PROJECTS </a></li>
-						<li><a href="#aboutus">ABOUT </a></li>
-						<li><a href="#blogs">BLOGS </a></li>
-						<li><a href="#contactus">CONTACT </a></li>
+						<li><a href="#index.html#portfolio">PROJECTS </a></li>
+						<li><a href="#index.html#aboutus">ABOUT </a></li>
+						<li><a href="#index.html#blogs">BLOGS </a></li>
+						<li><a href="#index.html#contactus">CONTACT </a></li>
 					</ul>
 
 					<div class="menu-contact-row">
@@ -128,7 +124,7 @@
 	</div>
 
 
-    <section class="pd-hero">
+    <section id="pdhero" class="pd-hero">
         <img class="pd-hero__img" src="assets/images/portfolio/A54/A54 - Elevation (2).png" alt="Sakura Restaurant">
         <div class="pd-hero__overlay"></div>
 
@@ -244,18 +240,18 @@
 	<!--==================================================-->
 
 	<div class="footer-section upper">
-		<div class="container">
+		<div class="container" >
 			<div class="row footer-row">
 
 				<div class="col-lg-3 col-md-6">
 					<div class="widgets-company-info-box wow fadeInUp">
 						<div class="footer-logo">
-							<h2>NIDHS</h2>
-							<span>REINVENT FUTURE</span>
-							<div class="footer-underline"></div>
+							<a class="logo_img" href="index.html" title="hendre">
+								<img src="assets/images/NIDHSlogo.png" alt="logo">
+							</a>
 						</div>
 						<div class="company-info-desc">
-							<p>NIDHS is an architecture and design studio driven by innovation, craftsmanship and a commitment to creating meaningful spaces.</p>
+							<p>THROUGH ARCHITECTURE, INTERIOR DESIGN, URBANISM, CONSTRUCTION ROOTING FROM SUSTAINABILTY AND TECHNOLOGY</p>
 						</div>
 					</div>
 				</div>
@@ -315,6 +311,8 @@
 				</div>
 
 			</div>
+
+		
 			<div class="row mg-tp align-items-center footer-bottom-row">
 				<div class="col-lg-4">
 					<div class="copy-rights">
@@ -328,8 +326,10 @@
 					<a class="a back-to-top" href="#top">↑ Back to Top</a>
 				</div>
 			</div>
+
 		</div>
 	</div>
+
 
 	<!--==================================================-->
 	<!-- End  Footer Section  -->
@@ -338,31 +338,65 @@
 
 </body>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var sidebarFacts = document.getElementById('pdFactsSidebar');
-        if (!sidebarFacts) return;
+	<!-- nav apearing on scroll -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var header = document.getElementById('sticky-header');
+			var hero = document.getElementById('pdhero');
 
-        // skip the animation entirely on mobile widths, per design
-        if (window.innerWidth <= 900) {
-            sidebarFacts.classList.add('is-visible');
-            return;
-        }
+			if (!header || !hero) return;
 
-        var observer = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                    sidebarFacts.classList.add('is-visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.2
-        });
+			var lastScrollY = window.scrollY;
+			var SCROLL_UP_THRESHOLD = 3;
 
-        observer.observe(sidebarFacts);
-    });
-</script>
+			window.addEventListener('scroll', function () {
+				var currentScrollY = window.scrollY;
+				var heroHeight = hero.offsetHeight;
+				var withinHero = currentScrollY < heroHeight;
+
+				if (withinHero) {
+					// always visible while in the hero
+					header.classList.remove('nav-hidden');
+				} else {
+					// past the hero: hide on scroll down, show on 3px+ scroll up
+					if (currentScrollY > lastScrollY) {
+						header.classList.add('nav-hidden');
+					} else if (currentScrollY < lastScrollY - SCROLL_UP_THRESHOLD) {
+						header.classList.remove('nav-hidden');
+					}
+				}
+
+				lastScrollY = currentScrollY;
+			}, { passive: true });
+		});
+	</script>
+
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var sidebarFacts = document.getElementById('pdFactsSidebar');
+			if (!sidebarFacts) return;
+
+			// skip the animation entirely on mobile widths, per design
+			if (window.innerWidth <= 900) {
+				sidebarFacts.classList.add('is-visible');
+				return;
+			}
+
+			var observer = new IntersectionObserver(function (entries) {
+				entries.forEach(function (entry) {
+					if (entry.isIntersecting) {
+						sidebarFacts.classList.add('is-visible');
+						observer.unobserve(entry.target);
+					}
+				});
+			}, {
+				threshold: 0.2
+			});
+
+			observer.observe(sidebarFacts);
+		});
+	</script>
 
 <!-- jquery js -->
 	<script src="assets/js/vendor/jquery-3.6.2.min.js"></script>

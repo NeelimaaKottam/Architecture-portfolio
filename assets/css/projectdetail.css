@@ -76,6 +76,7 @@
     animation-delay: 0.4s;
 }
 
+
 @keyframes pd-facts-fade-in {
     from {
         opacity: 0;
@@ -211,7 +212,7 @@
 
 
 /* small mobile :320px. */
-@media only screen and (min-width: 320px) and (max-width: 991px) {
+/* @media only screen and (min-width: 320px) and (max-width: 991px) {
 .sticky {
     position: relative !important;
 }
@@ -225,8 +226,6 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    
-    /* padding-left: 4vw; */
     padding-right: 10vw;
     box-sizing: border-box;
 }
@@ -255,4 +254,4 @@
     white-space: nowrap;
 }
 
-}
+} */

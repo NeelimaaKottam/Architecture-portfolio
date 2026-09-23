@@ -859,7 +859,8 @@ ul.sub-menu li:hover a span{
     justify-content: space-between;
     padding: 60px;
     overflow: hidden;
-    background: url(../images/menu.jpg);
+    /* background: url(../images/menu.jpg); */
+    background: url(../images/portfolio/dominion/DJI_0155.JPG);
     background-size: cover;
 
 }
@@ -2841,12 +2842,27 @@ ul.social-box li a:hover {
     margin: 0 0 33px;
 }
 
-.tab-thumb {
+/* .tab-thumb {
     float: left;
     margin-right: 25px;
-    /* width: 200px;
+    width: 200px;
     height: 200px;
-    object-fit: fill; */
+    object-fit: cover;
+} */
+
+.tab-thumb {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* use 'cover' instead if you want it to fill and crop */
 }
 
 .tab-title h3 {
@@ -12122,7 +12138,7 @@ button.btns:hover::before{
 
 
 /* Hero section css */
-.hero-slider {
+/* .hero-slider {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -12248,7 +12264,160 @@ button.btns:hover::before{
     .hero-slider__dot {
         width: 28px;
     }
+} */
+
+
+/* new hero css */
+
+/* Hero section css */
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    overflow: hidden;
+    background: #111;
 }
+
+.hero-slider__track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.hero-slider__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slider__media {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-slider__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+        to top right,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.6) 25%,
+        rgba(255, 255, 255, 0.25) 45%,
+        rgba(255, 255, 255, 0) 65%
+    );
+    pointer-events: none;
+}
+
+.hero-slider__content {
+    position: absolute;
+    left: 60px;
+    bottom: 120px;
+    z-index: 2;
+    color: #074B46;
+    pointer-events: none;
+    max-width: 520px;
+}
+
+.hero-slider__title {
+    font-size: 56px;
+    line-height: 1.15;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    margin: 0;
+    max-width: 700px;
+}
+
+.hero-slider__subtitle {
+    font-size: 18px;
+    line-height: 1.5;
+    /* letter-spacing: 0.05rem; */
+    font-weight: 600;
+    margin: 16px 0 0;
+    max-width: 560px;
+}
+
+.hero-slider__dots {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: flex;
+    gap: 14px;
+}
+
+.hero-slider__dot {
+    position: relative;
+    width: 42px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.35);
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    overflow: hidden;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.hero-slider__dot:hover,
+.hero-slider__dot:focus,
+.hero-slider__dot:active,
+.hero-slider__dot:focus-visible {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.hero-slider__dot-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #074B46;
+}
+
+.hero-slider__dot.is-active .hero-slider__dot-progress {
+    animation: hero-slider-fill 6s linear forwards;
+}
+
+@keyframes hero-slider-fill {
+    from { width: 0%; }
+    to   { width: 100%; }
+}
+
+@media (max-width: 768px) {
+    .hero-slider__content {
+        left: 24px;
+        bottom: 90px;
+    }
+    .hero-slider__title {
+        font-size: 34px;
+    }
+    .hero-slider__subtitle {
+        font-size: 15px;
+    }
+    .hero-slider__dots {
+        bottom: 24px;
+    }
+    .hero-slider__dot {
+        width: 28px;
+    }
+}
+
+/* contact us */
 
 .cu-contact {
     background-color: #074B46;
@@ -12273,25 +12442,31 @@ button.btns:hover::before{
     min-height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .cu-contact__bg-decor {
-    position: absolute;
-    inset: 0;
-    background-repeat: no-repeat;
-    background-position: top center;
-    /* background-position: left center; */
-    background-size: contain;
-    opacity: 0.7;
-    z-index: 0;
+    position: static;      /* was absolute — this was causing the overlap */
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    opacity: 1;
     pointer-events: none;
+    display: block;
 }
 
-.cu-contact__info-content,
 .cu-contact__details {
+    position: static;      /* was relative — not needed anymore */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;      /* just a normal gap now, not pushing past an overlapping image */
+}
+
+.cu-contact__info-content{
     position: relative;
     z-index: 1;
+
 }
 
 .cu-contact__title {

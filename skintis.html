@@ -30,14 +30,16 @@
     
 	<!-- Main Style CSS -->
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all">
 
 	<link rel="stylesheet" href="assets/css/projectdetail.css" type="text/css" media="all">
+
 
 </head>
 
 <body>
 
-    <div id="sticky-header" class="hendre_nav_manu two">
+	<div id="sticky-header" class="hendre_nav_manu two">
 		<div class="container-fluid">
 			<div class="row align-items-center">
 				<div class="col-lg-2">
@@ -54,14 +56,8 @@
 					
 				</div>
 				<div class="col-lg-3">
-					<div class="header-src-box">
-
-						<div class="header-button two">
-							<a href="#">Talk to us<i class="bi bi-arrow-right-short"></i></a>
-						</div>
-						<div class="sidebar-btn style_two">
-							<div class="nav-btn navSidebar-button style_two"><span><i class="bi bi-filter-left"></i></span></div>							
-						</div>
+					<div class="sidebar-btn style_two">
+						<div class="nav-btn navSidebar-button style_two"><span><i class="bi bi-filter-left"></i></span></div>							
 					</div>
 				</div>
 			</div>
@@ -78,9 +74,9 @@
 
 						<div class="menu-featured-project">
 							<span class="fp-label">FEATURED PROJECT</span>
-							<h4>Sakura -A Far Eastern Kitchen</h4>
-							<p>Restaurant<br>Hyderabad, Telangana<br>2024</p>
-							<a href="sakura.html" class="view-project-link">VIEW PROJECT <i class="fas fa-arrow-right"></i></a>
+							<h4>DOMINION </h4>
+							<p>Residential Apartment<br>Hyderabad, Telangana<br>2025</p>
+							<!-- <a href="sakura.html" class="view-project-link">VIEW PROJECT <i class="fas fa-arrow-right"></i></a> -->
 						</div>
 					</div>
 				</div>
@@ -101,10 +97,10 @@
 					</div>
 
 					<ul class="menu-nav-list">
-						<li><a href="#portfolio">PROJECTS </a></li>
-						<li><a href="#aboutus">ABOUT </a></li>
-						<li><a href="#blogs">BLOGS </a></li>
-						<li><a href="#contactus">CONTACT </a></li>
+						<li><a href="index.html#portfolio">PROJECTS </a></li>
+						<li><a href="index.html#aboutus">ABOUT </a></li>
+						<li><a href="index.html#blogs">BLOGS </a></li>
+						<li><a href="index.html#contactus">CONTACT </a></li>
 					</ul>
 
 					<div class="menu-contact-row">
@@ -128,7 +124,7 @@
 	</div>
 
 
-    <section class="pd-hero">
+    <section id="pdhero" class="pd-hero">
         <img class="pd-hero__img" src="assets/images/portfolio/skintis/DMP00343-HDR.jpg" alt="Skintis Clinic">
         <div class="pd-hero__overlay"></div>
 
@@ -163,7 +159,7 @@
         <div class="pd-body__content">
             <h2>Overview</h2>
             <p> 
-				Designed around the vibrant spirit of a Jatara, the restaurant brings together the colours, energy and cultural character of Telangana within a contemporary dining environment.
+				Walking into Skintis, you almost forget you're at a traditional skin clinic. The soft blush pinks, sage greens, and warm gold accents make it feel welcoming, as if you're entering a boutique retreat rather than a medical space. 
 			</p>
 
             
@@ -190,7 +186,8 @@
             </div>
 
             <p>
-				The interiors were conceived as an immersive expression of Telugu food and culture, reflecting the local identity of Hyderabad while creating a space that feels warm, lively and celebratory. Rather than directly recreating a traditional setting, the design interprets familiar cultural elements through materials, craft, artwork, colour and spatial details.			
+				The reception welcomes you with a backlit gold logo set against fluted glass panels - warm, layered, and quietly luxurious, without trying too hard. The waiting lounge, with its beautiful mural of a woman surrounded by leaves and little koi fish, greets you at the entrance, making the wait feel relaxing even before your consultation begins.
+
 			</p>
 			
 			<div class="pd-body__image-row">
@@ -204,7 +201,9 @@
                 </div>
             </div>
 
-			<p>The resulting space is intentionally vibrant and informal - a contemporary restaurant that celebrates the character of Jatara through colour, craft, art and atmosphere.</p>
+			<p>
+				As you walk further in, the same calm continues across the corridor of procedure rooms - pastel green doors with gold handles, and a pretty floral ceiling design that catches the light. It just feels like a space we designed to be more than a clinic - one where skin, care, and comfort belong together.
+			</p>
 
         </div>
     </section>
@@ -214,18 +213,18 @@
 	<!--==================================================-->
 
 	<div class="footer-section upper">
-		<div class="container">
+		<div class="container" >
 			<div class="row footer-row">
 
 				<div class="col-lg-3 col-md-6">
 					<div class="widgets-company-info-box wow fadeInUp">
 						<div class="footer-logo">
-							<h2>NIDHS</h2>
-							<span>REINVENT FUTURE</span>
-							<div class="footer-underline"></div>
+							<a class="logo_img" href="index.html" title="hendre">
+								<img src="assets/images/NIDHSlogo.png" alt="logo">
+							</a>
 						</div>
 						<div class="company-info-desc">
-							<p>NIDHS is an architecture and design studio driven by innovation, craftsmanship and a commitment to creating meaningful spaces.</p>
+							<p>THROUGH ARCHITECTURE, INTERIOR DESIGN, URBANISM, CONSTRUCTION ROOTING FROM SUSTAINABILTY AND TECHNOLOGY</p>
 						</div>
 					</div>
 				</div>
@@ -285,6 +284,8 @@
 				</div>
 
 			</div>
+
+		
 			<div class="row mg-tp align-items-center footer-bottom-row">
 				<div class="col-lg-4">
 					<div class="copy-rights">
@@ -298,6 +299,7 @@
 					<a class="a back-to-top" href="#top">↑ Back to Top</a>
 				</div>
 			</div>
+
 		</div>
 	</div>
 
@@ -307,6 +309,39 @@
 
 
 </body>
+
+	<!-- nav apearing on scroll -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var header = document.getElementById('sticky-header');
+			var hero = document.getElementById('pdhero');
+
+			if (!header || !hero) return;
+
+			var lastScrollY = window.scrollY;
+			var SCROLL_UP_THRESHOLD = 3;
+
+			window.addEventListener('scroll', function () {
+				var currentScrollY = window.scrollY;
+				var heroHeight = hero.offsetHeight;
+				var withinHero = currentScrollY < heroHeight;
+
+				if (withinHero) {
+					// always visible while in the hero
+					header.classList.remove('nav-hidden');
+				} else {
+					// past the hero: hide on scroll down, show on 3px+ scroll up
+					if (currentScrollY > lastScrollY) {
+						header.classList.add('nav-hidden');
+					} else if (currentScrollY < lastScrollY - SCROLL_UP_THRESHOLD) {
+						header.classList.remove('nav-hidden');
+					}
+				}
+
+				lastScrollY = currentScrollY;
+			}, { passive: true });
+		});
+	</script>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {

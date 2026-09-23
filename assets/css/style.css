@@ -859,7 +859,7 @@ ul.sub-menu li:hover a span{
     justify-content: space-between;
     padding: 60px;
     overflow: hidden;
-    background: url(/assets/images/menu.jpg);
+    background: url(../images/menu.jpg);
     background-size: cover;
 
 }

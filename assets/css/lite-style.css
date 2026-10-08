@@ -1,0 +1,410 @@
+
+/*================================
+<--  Digitcent light-theme Style Css -->
+==================================*/
+body.light-theme {
+    color: #303030 !important;
+}
+
+.light-theme .dark-light span {
+    color: #000000 !important;
+    font-size: 35px !important;
+}
+
+.light-theme .digitcent_nav_manu {
+    background-color: #fdfdfd !important;
+}
+
+.light-theme .digitcent_menu>ul>li>a {
+    color: #303030 !important;
+}
+
+.light-theme .header-contact-btn a {
+    color: #303030 !important;
+    background-image: linear-gradient(
+      to right,
+      #f94c30,
+      #f94c30 50%,
+      #303030 50%
+    );
+}
+
+/* sticky */
+.light-theme .sticky {
+    background: #fff !important;
+}
+
+.light-theme .sticky .digitcent_menu>ul>li>a,
+.light-theme .digitcent-section-title h1,
+.light-theme .section-button a {
+    color: #303030 !important;
+}
+
+.light-theme .section-button a:hover {
+    color: #fff !important;
+}
+
+/*
+<!-- ============================================================== -->
+<!-- Digitcent Hero Section Css -->
+<!-- ============================================================== -->*/
+
+.light-theme .hero-section {
+    background: #fff  !important;
+}
+
+.light-theme .banner-title h1 {
+    color: #303030  !important;
+}
+
+.light-theme .banner-social ul li a {
+    color: #303030  !important;
+}
+
+.light-theme .banner-shape-text span {
+    text-shadow: -1px 0 #303030, 0 1px #303030, 1px 0 #303030, 0 -1px #303030  !important;
+    color: #fff  !important;
+    opacity: .08 !important;
+}
+
+.light-theme .banner-title h1 span {
+    color: #fff  !important;
+}
+
+.light-theme .banner-text p {
+    color: #303030  !important;
+}
+
+/* Featur  Section */
+.light-theme .feature-single-box{
+    background-color: #fff  !important;
+    box-shadow: 0px 0px 30px 4px rgba(0,0,0,0.08) !important;
+}
+
+.light-theme .feature-icon span,
+.light-theme .feature-desc p,
+.light-theme .digitcent-section-title p,
+.light-theme .elementor-about-desc p {
+    color: #303030 !important;
+    transition: .5s !important;
+}
+
+.light-theme .feature-single-box:hover .feature-icon span {
+    color: #f94c30 !important;
+}
+
+
+.light-theme .feature-single-box:hover .feature-desc p {
+    color: #fff !important;
+}
+
+.light-theme .feature-title h5 {
+    color: #303030 !important;
+    transition: .5s !important;
+}
+
+.light-theme .feature-single-box:hover .feature-title h5,
+.light-theme .portfolio-info p {
+    color: #fff  !important;
+}
+
+.light-theme .service-single-box:hover .digitcent-service-title p {
+    color: #fff !important;
+    opacity: 1 !important;
+}
+
+.light-theme .service-single-box:hover .service-shape1 span {
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+
+
+
+
+
+/*================================
+<--  Digitcent Feature Section Css -->
+==================================*/
+.light-theme .feature-section,
+.light-theme .about-section,
+.light-theme .service-section,
+.light-theme .portfolio-section,
+.light-theme .portfolio-section,
+.light-theme .testimonial-section,
+.light-theme .blog-section,
+.light-theme .footer-section,
+.light-theme .footer-bottom-section {
+    background-color: #fff !important;
+    border-top: 1px solid rgba(16,18,16,0.10196078431372549) !important;
+    transition: .5s !important;
+}
+
+.light-theme .elementor-about-title p {
+    color: #303030 !important;
+}
+
+.light-theme .elementor-about-title a:hover p {
+    color: #f94c30 !important;
+}
+
+.light-theme .about-icon span {
+    color: #303030 !important;
+}
+
+/* Service */
+.light-theme .service-single-box {
+    background-color: #fff !important;
+    box-shadow: 0px 0px 30px 4px rgba(0,0,0,0.08) !important;
+}
+
+.light-theme .digitcent-service-title h2 {
+    color: #303030 !important;
+    transition: .5s !important;
+}
+
+.light-theme .service-single-box:hover .digitcent-service-title h2 {
+    color: #fff !important;
+}
+
+.light-theme .digitcent-service-title p {
+    color: #303030  !important;
+    opacity: 0.7  !important;
+}
+
+/* Brand */
+.light-theme .brand-section {
+    background-color: #fff  !important;
+}
+
+.light-theme .brand-thumb svg {
+    fill: #303030  !important;
+    opacity: .5  !important;
+    transition: .5s  !important;
+}
+
+.light-theme .brand-thumb:hover svg {
+    opacity: 1  !important;
+}
+
+/* Testimonial */
+.light-theme .single-testimonial-box {
+    background-color: #fff !important;
+    box-shadow: 0px 0 10px 4px rgba(0,0,0,0.08) !important;
+}
+
+.light-theme .testi-description p {
+    color: #303030 !important;
+}
+
+.light-theme .testi-content h5 {
+    color: #303030 !important;
+}
+
+.light-theme .single-testimonial-box:hover .testi-content h5{
+    color: #f94c30 !important;
+}
+
+/* Blog */
+.light-theme .blog-single-box {
+    background-color: #fff !important;
+    box-shadow: 0px 0 10px 4px rgba(0,0,0,0.08) !important;
+}
+
+.light-theme .blog-single-box .blog-box-inner hr {
+    border-bottom: 1px solid rgba(16,18,16,0.10196078431372549) !important;
+}
+
+.light-theme .blog-single-box .blog-title h5,
+.light-theme .blog-single-box .blog-title p{
+    color: #303030 !important;
+}
+
+.light-theme .blog-single-box .blog-desc a {
+    color: #303030 !important;
+}
+
+
+
+/* Footer Section */
+.light-theme .company-info-desc p,
+.light-theme h4.widget-title,
+.light-theme ul.footer-menu li a,
+.light-theme .widget-info ul li a,
+.light-theme .footer-bottom-menu ul li a,
+.light-theme .footer-bottom-content-copy p  {
+    color: #303030 !important;
+}
+
+.light-theme .follow-company-icon a {
+    background-color: #fff !important;
+    box-shadow: 0px 0px 30px 4px rgba(0,0,0,0.05) !important;
+}
+
+
+
+/* Contact US Page */
+.light-theme .contact-us {
+    background-color: #fff !important;
+}
+
+.light-theme .row.cntc-bg2,
+.light-theme .form-box input,
+.light-theme .form-box textarea {
+    background-color: #fff !important;
+    box-shadow: 0px 0 10px 4px rgba(0,0,0,0.08) !important;
+}
+
+.light-theme .form-box input,
+.light-theme .form-box textarea {
+    color: #303030 !important;
+}
+
+.light-theme .form-box input::placeholder,
+.light-theme .form-box textarea::placeholder {
+    color: #303030 !important;
+    opacity: .5 !important;
+}
+
+.light-theme h4.contact-form-title {
+    color: #303030 !important;
+}
+
+.light-theme .contacts-title h5 {
+    font-weight: 600 !important;
+    font-size: 17px !important;
+    color: #000 !important;
+}
+
+.light-theme img.logoImage {
+    opacity: 0 !important;
+}
+
+.light-theme a.logo_img {
+    background: url(../images/logo3.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    padding-bottom: 5px !important;
+}
+
+.light-theme .digitcent_nav_manu.sticky .logo_img {
+    display: unset !important;
+}
+
+.light-theme .digitcent_nav_manu.sticky .main_sticky {
+    display: none !important;
+}
+
+.light-theme .single-contact-info-box {
+    background-color: #fff !important;
+    box-shadow: 0px 0 10px 4px rgba(0,0,0,0.08) !important;
+    background-image: none !important;
+}
+
+.light-theme .contacts-icon {
+    background-color: rgb(129, 109, 109) !important;
+}
+
+.light-theme .contact-information2:hover .contacts-icon {
+    background-color: #f94c30 !important;
+}
+
+.light-theme .contacts-title h6 {
+    color: #303030 !important;
+}
+
+.light-theme h3.cntc-info-title {
+    color: #000 !important;
+}
+
+/* breatcam */
+
+/* .light-theme .breatcam-section {
+    background: #fff !important;
+    height: 415px;
+    border-bottom: 1px solid !important;
+}
+
+.light-theme .breatcam-content h1,
+.light-theme .breatcam-content ul li{
+    color: #303030 !important;
+}
+
+.light-theme .breatcam-content ul li a:before{
+    background-color: #303030 !important;
+} */
+
+/* Blog Details */
+.light-theme .blogs-section {
+    background-color: #fff !important;
+}
+
+.light-theme .blogs-section:before {
+    background-color: #e8e8e8 !important;
+}
+
+.light-theme .blogs-section .blog-content {
+    background-color: #fff !important;
+    box-shadow: 0px 0px 30px 4px rgba(0,0,0,0.08) !important;
+    border: none !important;
+}
+
+.light-theme .blogs-section ul.blog-author li,
+.light-theme .blogs-section h2.blog-title a,
+.light-theme .blogs-section ul.product-list li,
+.light-theme .blogs-section .blog-content p,
+.light-theme .blogs-section span.social-text,
+.light-theme .blogs-section h3.blog-comment-title,
+.light-theme .blogs-section .blog-post-comment h4.post-title,
+.light-theme .blogs-section .post-content p,
+.light-theme .blogs-section .blog-post-comment span.rights-reply,
+.light-theme .blogs-section h6.form-title,
+.light-theme .blogs-section h4.sidebar-title,
+.light-theme .blogs-section ul.sidebar-menu li a,
+.light-theme .blogs-section .rpost-content h4 a
+ {
+    color: #303030 !important;
+}
+
+.light-theme .blogs-section .blogs-social-share,
+.light-theme .blogs-section ul.social-share li a,
+.light-theme .blogs-section .blog-post-comment,
+.light-theme .blogs-section .contact-form-box3,
+.light-theme .blogs-section .widget-sidebar-box,
+.light-theme .blogs-section ul.sidebar-menu li,
+.light-theme .blogs-section ul.sidebar-menu li a i {
+    background: #fff !important;
+    box-shadow: 0px 0px 30px 4px rgba(0,0,0,0.08) !important;
+    border: none !important;
+}
+
+.light-theme .blogs-section ul.sidebar-menu li:hover {
+    background-color: #1D1D1D !important;
+}
+
+.light-theme .blogs-section ul.sidebar-menu li:hover a {
+    color: #fff !important;
+}
+
+.light-theme .blogs-section ul.sidebar-menu li:hover a i {
+    background-color: #f94c30 !important;
+}
+
+.light-theme .blogs-section .tag-item a {
+    background: #565656  !important;
+}
+
+.light-theme .mean-container .mean-bar {
+    background-color: #fff !important;
+}
+
+.light-theme .mean-container .mean-bar::before {
+    color: #10102E !important;
+}
+
+.light-theme .mean-container a.meanmenu-reveal span {
+    background-color: #10102E !important;
+}
+
+.light-theme .mean-container a.meanmenu-reveal {
+    color: #10102E !important;
+}
